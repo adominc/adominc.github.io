@@ -174,9 +174,29 @@ footer {
 footer .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1.5rem;
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.footer-info address {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.footer-info a {
+  color: var(--link);
+}
+
+.footer-info a:hover {
+  color: #fff;
 }
 
 footer nav a {
